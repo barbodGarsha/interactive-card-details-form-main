@@ -31,7 +31,26 @@ li {
 }
 
 .card-back {
-  display: none;
+  position: absolute;
+  right: -35%;
+  top: 53%;
+}
+
+.card-back .card-back__container {
+  position: relative;
+}
+
+.card-back .card-back__background {
+  height: 17rem;
+}
+
+.card-back .card-back__cvc {
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  top: 45%;
+  right: 12%;
 }
 
 .inputs {
@@ -42,6 +61,7 @@ li {
   text-transform: uppercase;
   font-family: 'Space Grotesk', sans-serif;
   font-size: .9rem;
+  letter-spacing: .1rem;
   margin-bottom: .5rem;
 }
 
@@ -106,6 +126,7 @@ li {
 }
 
 .page .page__background {
+  position: relative;
   background-image: url("../images/bg-main-desktop.png");
   background-size: cover;
   -webkit-box-flex: 1;

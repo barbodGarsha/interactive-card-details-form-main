@@ -68,9 +68,26 @@ li {
 }
 
 .card-back {
-    display: none;
-    .card-back__cvc {
+    position: absolute;
+    right: -35%;
+    top: 53%;
 
+    .card-back__container {
+        position: relative;
+    }
+
+    .card-back__background {
+        height: 17rem;
+    }
+
+    .card-back__cvc {
+        color: $c-White;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1rem;
+
+        position: absolute;
+        top: 45%;
+        right: 12%;
     }
 }
 
@@ -80,6 +97,7 @@ li {
         text-transform: uppercase;
         font-family: 'Space Grotesk', sans-serif;
         font-size: .9rem;
+        letter-spacing: .1rem;
 
         margin-bottom: .5rem;
     }
@@ -137,6 +155,7 @@ li {
 
     height: 100vh;
     .page__background {
+        position: relative;
         background-image: url('../images/bg-main-desktop.png');
         background-size: cover;
 
