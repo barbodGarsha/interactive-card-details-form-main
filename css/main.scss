@@ -8,7 +8,7 @@ $c-input-error: hsl(0, 100%, 66%);
 $c-White: hsl(0, 0%, 100%);
 $c-light-grayish-violet: hsl(270, 3%, 87%);
 $c-dark-grayish-violet: hsl(279, 6%, 55%);
-$c-ver-dark-grayish-violet:hsl(278, 68%, 11%);
+$c-very-dark-grayish-violet:hsl(278, 68%, 11%);
 
 // Resets ===============================================
 body {
@@ -117,7 +117,18 @@ li {
     }
     
     .inputs__btn {
+        background-color: $c-very-dark-grayish-violet;
+        color: $c-light-grayish-violet;
 
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.2rem;
+
+        width: 27rem;
+
+        border-radius: 9px;
+
+        padding: .90rem 1rem;
+        margin-top: 1rem;
     }
 }
 

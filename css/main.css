@@ -87,6 +87,17 @@ li {
   width: 50%;
 }
 
+.inputs .inputs__btn {
+  background-color: #21092f;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  width: 27rem;
+  border-radius: 9px;
+  padding: .90rem 1rem;
+  margin-top: 1rem;
+}
+
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
