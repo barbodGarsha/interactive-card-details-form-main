@@ -35,7 +35,7 @@ li {
 }
 
 .inputs {
-  width: 30rem;
+  width: 25rem;
 }
 
 .inputs .inputs__name {
@@ -52,7 +52,7 @@ li {
   border: solid 1px #dedddf;
   border-radius: 9px;
   padding: .70rem 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .inputs .inputs__in-txt::-webkit-input-placeholder {

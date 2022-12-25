@@ -75,7 +75,7 @@ li {
 }
 
 .inputs {
-    width: 30rem;
+    width: 25rem;
     .inputs__name {
         text-transform: uppercase;
         font-family: 'Space Grotesk', sans-serif;
@@ -85,9 +85,6 @@ li {
     }
 
     .inputs__in-txt {
-        &::placeholder {
-            color: $c-light-grayish-violet;
-        }
         font-family: 'Space Grotesk', sans-serif;
         font-size: 1.2rem;
 
@@ -97,8 +94,11 @@ li {
         border-radius: 9px;
 
         padding: .70rem 1rem;
-        margin-bottom: 1.5rem;
-
+        margin-bottom: 1.8rem;
+        
+        &::placeholder {
+            color: $c-light-grayish-violet;
+        }
     }
 
     .inputs__flex {
