@@ -45,25 +45,66 @@ li {
 }
 
 .card-front {
+    position: absolute;
+    right: -18%;
+    top: 21%;
 
-    display: none;
+    .card-front__container {
+        position: relative;
+    }
+
+    .card-front__background {
+        height: 17rem;
+    }
+
     .card-front__logo {
-
+        position: absolute;
+        top: 10%;
+        left: 5%;
     }
 
     .card-front__number {
+        color: $c-light-grayish-violet;
 
+        text-transform: uppercase;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: .1rem;
+
+        position: absolute;
+        bottom: 28%;
+        left: 5%;
     }
 
     .card-front__info {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 90%;
 
     }
 
     .card-front__cardholder-name {
+        color: $c-light-grayish-violet;
 
+        text-transform: uppercase;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1rem;
+        letter-spacing: .1rem;
     }
 
     .card-front__exp-date {
+        color: $c-light-grayish-violet;
+
+        text-transform: uppercase;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1rem;
+        letter-spacing: .1rem;
     }
 }
 
