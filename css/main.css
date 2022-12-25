@@ -25,4 +25,97 @@ li {
   margin: 0;
   padding: 0;
 }
+
+.card-front {
+  display: none;
+}
+
+.card-back {
+  display: none;
+}
+
+.inputs {
+  width: 30rem;
+}
+
+.inputs .inputs__name {
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+
+.inputs .inputs__in-txt {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  border: solid 1px #dedddf;
+  border-radius: 9px;
+  padding: .70rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputs .inputs__in-txt::-webkit-input-placeholder {
+  color: #dedddf;
+}
+
+.inputs .inputs__in-txt:-ms-input-placeholder {
+  color: #dedddf;
+}
+
+.inputs .inputs__in-txt::-ms-input-placeholder {
+  color: #dedddf;
+}
+
+.inputs .inputs__in-txt::placeholder {
+  color: #dedddf;
+}
+
+.inputs .inputs__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.inputs .inputs__flex .inputs__flex__left {
+  width: 50%;
+  margin-right: 3rem;
+}
+
+.inputs .inputs__flex .inputs__flex__right {
+  width: 50%;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.page .page__background {
+  background-image: url("../images/bg-main-desktop.png");
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 30vw;
+  height: 100%;
+}
+
+.page .page__inputs {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */

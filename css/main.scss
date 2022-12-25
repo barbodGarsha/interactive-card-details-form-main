@@ -46,6 +46,7 @@ li {
 
 .card-front {
 
+    display: none;
     .card-front__logo {
 
     }
@@ -67,45 +68,78 @@ li {
 }
 
 .card-back {
-
+    display: none;
     .card-back__cvc {
 
     }
 }
 
 .inputs {
-
+    width: 30rem;
     .inputs__name {
+        text-transform: uppercase;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: .9rem;
 
+        margin-bottom: .5rem;
     }
 
     .inputs__in-txt {
+        &::placeholder {
+            color: $c-light-grayish-violet;
+        }
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.2rem;
+
+        width: 100%;
+
+        border: solid 1px $c-light-grayish-violet;
+        border-radius: 9px;
+
+        padding: .70rem 1rem;
+        margin-bottom: 1.5rem;
 
     }
 
     .inputs__flex {
-        
+        display: flex;
+        width: 100%;
         .inputs__flex__left {
-
+            width: 50%;
+            margin-right: 3rem;
         }
 
         .inputs__flex__right {
+            width: 50%;
 
         }
 
     }
     
     .inputs__btn {
-        
+
     }
 }
 
 .page {
-    .page__background {
+    display: flex;
 
+    height: 100vh;
+    .page__background {
+        background-image: url('../images/bg-main-desktop.png');
+        background-size: cover;
+
+        flex: 1;
+        min-width: 30vw;
+        height: 100%;
     }
 
     .page__inputs {
+        flex: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 }
