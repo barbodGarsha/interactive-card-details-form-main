@@ -125,6 +125,7 @@ li {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
   width: 100%;
+  outline: none !important;
   border: solid 1px #dedddf;
   border-radius: 9px;
   padding: .70rem 1rem;
@@ -145,6 +146,10 @@ li {
 
 .inputs .inputs__in-txt::placeholder {
   color: #dedddf;
+}
+
+.inputs .inputs__in-txt:focus {
+  border-color: #600594;
 }
 
 .inputs .inputs__flex {

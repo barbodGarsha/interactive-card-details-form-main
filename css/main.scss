@@ -149,6 +149,7 @@ li {
 
         width: 100%;
 
+        outline: none !important;
         border: solid 1px $c-light-grayish-violet;
         border-radius: 9px;
 
@@ -158,6 +159,9 @@ li {
         &::placeholder {
             color: $c-light-grayish-violet;
         }
+    }
+    .inputs__in-txt:focus {
+        border-color: hsl(278, 94%, 30%);
     }
 
     .inputs__flex {
