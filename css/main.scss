@@ -303,6 +303,9 @@ li {
     display: none;
 }
 
+.footer {
+    margin-top: 1rem;
+}
 
 @media screen and  (min-width: 1171px) and (max-width: 1350px){
 
@@ -395,12 +398,15 @@ li {
     }
     
     .page {
-        flex-direction: column;
+        display: block;
+        height: auto;
+        
        .page__background {
+            height: 13.75rem;
             background-image: url('../images/bg-main-mobile.png');
         }
         .page__inputs {
-            margin-top: 8rem;
+            margin-top: 5rem;
         }
     }
     
