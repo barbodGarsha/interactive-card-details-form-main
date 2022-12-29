@@ -193,6 +193,43 @@ li {
   padding: .90rem 1rem;
 }
 
+.done .done__icon {
+  width: 5.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.4rem;
+}
+
+.done .done__thank-you {
+  color: #21092f;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  margin-bottom: 1rem;
+}
+
+.done .done__message {
+  color: #8e8593;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 3.3rem;
+}
+
+.done .done__btn {
+  text-align: center;
+  cursor: pointer;
+  background-color: #21092f;
+  color: #dedddf;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  width: 27rem;
+  border-radius: 9px;
+  padding: .90rem 1rem;
+}
+
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,5 +261,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
