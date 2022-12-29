@@ -183,6 +183,7 @@ li {
 }
 
 .inputs .inputs__btn {
+  cursor: pointer;
   background-color: #21092f;
   color: #dedddf;
   font-family: 'Space Grotesk', sans-serif;
