@@ -63,10 +63,10 @@
                   <p class="inputs__name">Exp. Date (MM/YY)</p>
                   <div class="inputs__flex">
                     <div class="inputs__flex__left inputs__flex--width-50-percent"> 
-                      <input type="text" class="inputs__in-txt" placeholder="MM" data-input-MM>
+                      <input type="number" class="inputs__in-txt" placeholder="MM" data-input-MM>
                     </div>
                     <div class="inputs__flex__right inputs__flex--width-50-percent">   
-                      <input type="text" class="inputs__in-txt" placeholder="YY" data-input-YY>
+                      <input type="number" class="inputs__in-txt" placeholder="YY" data-input-YY>
                     </div>
                   </div>
                   <p class="inputs__error inputs__error--display-none " data-error-date>Can't be blank</p>
@@ -76,16 +76,16 @@
               <div class="inputs__flex__right"> 
                 <div class="inputs__in-container">
                   <p class="inputs__name">CVC</p>
-                  <input type="text" class="inputs__in-txt" placeholder="e.g. 123" data-input-CVC>
+                  <input type="number" class="inputs__in-txt" placeholder="e.g. 123" data-input-CVC>
                   <p class="inputs__error inputs__error--display-none" data-error-CVC>Can't be blank</p>
                 </div>
               </div>  
             </div>
 
-            <input type="button" class="inputs__btn" value="Confirm">
+            <input type="button" class="inputs__btn" value="Confirm" data-btn-confirm>
           </form>
 
-          <div class="done hide">
+          <div class="done hide" data-done>
             <img src="./images/icon-complete.svg" alt="complete icon" class="done__icon">
             <p class="done__thank-you">Thank you!</p>
             <p class="done__message">We've added your card details</p>

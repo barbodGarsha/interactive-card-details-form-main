@@ -1,4 +1,5 @@
 inputs_field = document.querySelector('[data-inputs-field]')
+done = document.querySelector('[data-done]')
 
 input_cardholder = document.querySelector('[data-input-cardholder]')
 input_card_number = document.querySelector('[data-input-card-number]')
@@ -18,13 +19,28 @@ error_card_number = document.querySelector('[data-error-card-number]')
 error_date = document.querySelector('[data-error-date]')
 error_CVC = document.querySelector('[data-error-CVC]')
 
+btn_confirm = document.querySelector('[data-btn-confirm]')
+
+
+can_confirm = false
+
 // useful functions ==============================
 function onlyNumbers(str) {
     return /^[0-9]+$/.test(str);
 }
 
 // MAIN ==========================================
+btn_confirm.addEventListener('click', function(e) {
+    if(can_confirm) {    
+        inputs_field.classList.add('hide')
+        done.classList.remove('hide')
+    }
+})
+
 inputs_field.addEventListener('input', function(e) {
+    
+    can_confirm = true
+
     error_card_number.classList.add('inputs__error--display-none')
     error_date.classList.add('inputs__error--display-none')
     error_CVC.classList.add('inputs__error--display-none')
@@ -35,6 +51,7 @@ inputs_field.addEventListener('input', function(e) {
     }
     else {
         viewer_cardholder.innerHTML = "xxxxx xxxxxx"
+        can_confirm = false
     }
     
     if(input_card_number.value != "") {
@@ -43,9 +60,15 @@ inputs_field.addEventListener('input', function(e) {
         if(!onlyNumbers(n)) { 
             //if(!input_card_number.classList.contains('inputs__error--display-none')) 
             error_card_number.classList.remove('inputs__error--display-none')
+            can_confirm = false
         } // TODO: show error for letters not allowed
         
-        if(n.length > 16) { n = n.substring(0, 16) } // too long
+        if(n.length > 16) { 
+            n = n.substring(0, 16) 
+            can_confirm = false 
+        } // too long
+
+        if(n.length != 16) { can_confirm = false }
 
         n = n.replace(/\d{4}(?=.)/g, '$& ') // add a space inbetween every 4 number
 
@@ -53,6 +76,7 @@ inputs_field.addEventListener('input', function(e) {
     }
     else {
         viewer_card_number.innerHTML = "0000 0000 0000 0000"
+        can_confirm = false
     }
     
     if(input_MM.value.replace(/\s/g, '') != "") {
@@ -61,6 +85,7 @@ inputs_field.addEventListener('input', function(e) {
     else {
         error_date.classList.remove('inputs__error--display-none')
         viewer_MM.innerHTML = "00"
+        can_confirm = false
     }
     
     if(input_YY.value.replace(/\s/g, '') != "") {
@@ -69,6 +94,7 @@ inputs_field.addEventListener('input', function(e) {
     else {
         error_date.classList.remove('inputs__error--display-none')
         viewer_YY.innerHTML = "00"
+        can_confirm = false
     }
     
     if(input_CVC.value.replace(/\s/g, '') != "") {
@@ -77,6 +103,7 @@ inputs_field.addEventListener('input', function(e) {
     else {
         error_CVC.classList.remove('inputs__error--display-none')
         viewer_CVC.innerHTML = "000"
+        can_confirm = false
     }
     
 })

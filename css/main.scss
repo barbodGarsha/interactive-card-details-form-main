@@ -208,6 +208,18 @@ li {
         padding: .90rem 1rem;
     }
     
+
+    // Remove arrows from the textfield
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
 }
 
 .done {
