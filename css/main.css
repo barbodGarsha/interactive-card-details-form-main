@@ -129,7 +129,6 @@ li {
   border: solid 1px #dedddf;
   border-radius: 9px;
   padding: .70rem 1rem;
-  margin-bottom: 1.8rem;
 }
 
 .inputs .inputs__in-txt::-webkit-input-placeholder {
@@ -150,6 +149,21 @@ li {
 
 .inputs .inputs__in-txt:focus {
   border-color: #600594;
+}
+
+.inputs .inputs__in-container {
+  margin-bottom: 1.8rem;
+}
+
+.inputs .inputs__error {
+  color: #ff5252;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .85rem;
+  margin-top: .6rem;
+}
+
+.inputs .inputs__error--display-none {
+  display: none;
 }
 
 .inputs .inputs__flex {
@@ -176,7 +190,6 @@ li {
   width: 27rem;
   border-radius: 9px;
   padding: .90rem 1rem;
-  margin-top: 1rem;
 }
 
 .page {

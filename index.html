@@ -45,28 +45,40 @@
         </div>
         <div class="page__inputs">
           <form action="submit" class="inputs" data-inputs-field>
-            <p class="inputs__name">Cardholder Name</p>
-            <input type="text" class="inputs__in-txt" placeholder="e.g. Jane Appleseed" data-input-cardholder>
             
-            <p class="inputs__name">Card Number</p>
-            <input type="text" class="inputs__in-txt" placeholder="e.g. 1234 5678 9123 0000" data-input-card-number>
-
+            <div class="inputs__in-container">
+              <p class="inputs__name">Cardholder Name</p>
+              <input type="text" class="inputs__in-txt" placeholder="e.g. Jane Appleseed" data-input-cardholder>  
+            </div>
+            
+            <div class="inputs__in-container">
+              <p class="inputs__name">Card Number</p>
+              <input type="text" class="inputs__in-txt" placeholder="e.g. 1234 5678 9123 0000" data-input-card-number>
+              <p class="inputs__error">Wrong format, numbers only</p>  
+            </div>
+            
             <div class="inputs__flex">
               <div class="inputs__flex__left inputs__flex--width-50-percent"> 
-                <p class="inputs__name">Exp. Date (MM/YY)</p>
-                <div class="inputs__flex">
-                  <div class="inputs__flex__left inputs__flex--width-50-percent"> 
-                    <input type="text" class="inputs__in-txt" placeholder="MM" data-input-MM>
+                <div class="inputs__in-container">
+                  <p class="inputs__name">Exp. Date (MM/YY)</p>
+                  <div class="inputs__flex">
+                    <div class="inputs__flex__left inputs__flex--width-50-percent"> 
+                      <input type="text" class="inputs__in-txt" placeholder="MM" data-input-MM>
+                    </div>
+                    <div class="inputs__flex__right inputs__flex--width-50-percent">   
+                      <input type="text" class="inputs__in-txt" placeholder="YY" data-input-YY>
+                    </div>
                   </div>
-                  <div class="inputs__flex__right inputs__flex--width-50-percent">   
-                    <input type="text" class="inputs__in-txt" placeholder="YY" data-input-YY>
-                  </div>
+                  <p class="inputs__error">Can't be blank</p>
                 </div>
               </div>  
               
               <div class="inputs__flex__right"> 
-                <p class="inputs__name">CVC</p>
-                <input type="text" class="inputs__in-txt" placeholder="e.g. 123" data-input-CVC>
+                <div class="inputs__in-container">
+                  <p class="inputs__name">CVC</p>
+                  <input type="text" class="inputs__in-txt" placeholder="e.g. 123" data-input-CVC>
+                  <p class="inputs__error">Can't be blank</p>
+                </div>
               </div>  
             </div>
 

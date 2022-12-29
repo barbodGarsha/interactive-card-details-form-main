@@ -154,7 +154,6 @@ li {
         border-radius: 9px;
 
         padding: .70rem 1rem;
-        margin-bottom: 1.8rem;
         
         &::placeholder {
             color: $c-light-grayish-violet;
@@ -162,6 +161,21 @@ li {
     }
     .inputs__in-txt:focus {
         border-color: hsl(278, 94%, 30%);
+    }
+
+    .inputs__in-container {
+        margin-bottom: 1.8rem;
+    }
+
+    .inputs__error {
+        color: $c-input-error;
+
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: .85rem;
+        margin-top: .6rem;
+    }
+    .inputs__error--display-none {
+        display: none;
     }
 
     .inputs__flex {
@@ -191,8 +205,8 @@ li {
         border-radius: 9px;
 
         padding: .90rem 1rem;
-        margin-top: 1rem;
     }
+    
 }
 
 .page {
