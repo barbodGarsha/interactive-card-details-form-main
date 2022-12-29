@@ -123,6 +123,8 @@ li {
 }
 
 .inputs .inputs__in-txt {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
   width: 100%;
@@ -175,21 +177,31 @@ li {
 }
 
 .inputs .inputs__flex .inputs__flex__left {
-  width: 50%;
-  margin-right: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 1.2rem;
+}
+
+.inputs .inputs__flex .inputs__flex__left--less-margin {
+  margin-right: .7rem;
 }
 
 .inputs .inputs__flex .inputs__flex__right {
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .inputs .inputs__btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: pointer;
   background-color: #21092f;
   color: #dedddf;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.2rem;
-  width: 27rem;
+  width: 100%;
   border-radius: 9px;
   padding: .90rem 1rem;
 }
@@ -276,5 +288,85 @@ li {
 
 .hide {
   display: none;
+}
+
+@media screen and (min-width: 1171px) and (max-width: 1350px) {
+  .card-back, .card-front {
+    scale: .9;
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
+  .page .page__inputs {
+    scale: .9;
+  }
+}
+
+@media screen and (min-width: 976px) and (max-width: 1170px) {
+  .card-back, .card-front {
+    scale: .8;
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  .page .page__inputs {
+    scale: .8;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .card-back {
+    top: 2rem;
+    right: 1.5rem;
+    z-index: 98;
+  }
+  .card-back .card-back__background {
+    height: 9rem;
+  }
+  .card-back .card-back__cvc {
+    font-size: .5rem;
+  }
+  .card-front {
+    top: 7rem;
+    right: auto;
+    left: 1.5rem;
+    z-index: 99;
+  }
+  .card-front .card-front__background {
+    height: 9rem;
+  }
+  .card-front .card-front__logo {
+    width: 4rem;
+  }
+  .card-front .card-front__number {
+    font-size: 1.15rem;
+    letter-spacing: .05rem;
+  }
+  .card-front .card-front__cardholder-name, .card-front .card-front__exp-date {
+    font-size: .55rem;
+    letter-spacing: .05rem;
+  }
+  .inputs {
+    width: 90vw;
+  }
+  .inputs .inputs__name {
+    font-size: .8rem;
+  }
+  .inputs .inputs__in-txt {
+    font-size: 1.1rem;
+  }
+  .inputs .inputs__btn {
+    width: 100%;
+  }
+  .page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .page__background {
+    background-image: url("../images/bg-main-mobile.png");
+  }
+  .page .page__inputs {
+    margin-top: 8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
