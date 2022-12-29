@@ -45,7 +45,7 @@ inputs_field.addEventListener('input', function(e) {
             error_card_number.classList.remove('inputs__error--display-none')
         } // TODO: show error for letters not allowed
         
-        if(n.length > 16) {console.log('ERROR')} // too long
+        if(n.length > 16) { n = n.substring(0, 16) } // too long
 
         n = n.replace(/\d{4}(?=.)/g, '$& ') // add a space inbetween every 4 number
 
