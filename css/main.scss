@@ -163,6 +163,9 @@ li {
     .inputs__in-txt:focus {
         border-color: hsl(278, 94%, 30%);
     }
+    .inputs_in-txt--error {
+        border-color: $c-input-error;
+    }
 
     .inputs__in-container {
         margin-bottom: 1.8rem;

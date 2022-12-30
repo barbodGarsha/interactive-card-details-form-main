@@ -154,6 +154,10 @@ li {
   border-color: #600594;
 }
 
+.inputs .inputs_in-txt--error {
+  border-color: #ff5252;
+}
+
 .inputs .inputs__in-container {
   margin-bottom: 1.8rem;
 }
